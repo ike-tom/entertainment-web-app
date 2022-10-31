@@ -1,0 +1,95 @@
+.movieWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 164px;
+  @media screen and (min-width: 768px) {
+    width: 220px;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 280px;
+  }
+  .posterWrapper {
+    border-radius: 8px;
+    width: 164px;
+    height: 110px;
+    overflow: hidden;
+    position: relative;
+    @media screen and (min-width: 768px) {
+      width: 220px;
+      height: 140px;
+    }
+    @media screen and (min-width: 1024px) {
+      width: 280px;
+      height: 174px;
+    }
+    .bookmarkWrapper {
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: #10141e;
+      mix-blend-mode: normal;
+      opacity: 0.5;
+      top: 8px;
+      right: 8px;
+      cursor: pointer;
+      @media screen and (min-width: 768px) {
+        top: 16px;
+        right: 16px;
+      }
+    }
+    .bookmarkIcon {
+      position: relative;
+      color: red;
+      font-size: 14px;
+    }
+  }
+  .movieInfoWrapper {
+    font-family: 'Outfit';
+    color: #ffffff;
+    margin: 8px 0 0 0;
+    .movieDetailsWrapper {
+      display: flex;
+      height: 14px;
+      font-weight: 300;
+      font-size: 11px;
+      line-height: 14px;
+      align-items: center;
+      mix-blend-mode: normal;
+      opacity: 0.75;
+      @media screen and (min-width: 768px) {
+        font-size: 13px;
+        line-height: 16px;
+      }
+      .iconWrapper {
+        width: 10px;
+        height: 10px;
+        position: relative;
+        margin-right: 4px;
+      }
+      .dot {
+        width: 14px;
+        text-align: center;
+        @media screen and (min-width: 768px) {
+          width: 19px;
+        }
+      }
+      .productionYear,
+      .type,
+      .pgRating {
+        margin: 0;
+      }
+    }
+  }
+  .movieTitle {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 4px 0 0 0;
+    @media screen and (min-width: 768px) {
+      margin-top: 5px;
+      font-size: 18px;
+      line-height: 23px;
+    }
+  }
+}
